@@ -1,11 +1,6 @@
-/*  find the the min value from all even indexed elements from a given int arrays?
-    input : [2,4,5,3,8,6]
-    output :2  
-    */
-
 import java.util.*;
 
-class problem_1 {
+class problem_5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size:");
@@ -24,8 +19,8 @@ class problem_1 {
     public static int add(int[] arr1) {
         int index = 1;
         for (int i = 0; i < arr1.length; i++) {
-            if (i % 2 == 0) {
-                if (arr1[i] < arr1[index]) {
+            if (i % 2 != 0) {
+                if (arr1[i] > arr1[index]) {
                     index = i;
                 }
             }
